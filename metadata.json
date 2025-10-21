@@ -1,5 +1,0 @@
-{
-  "name": "AI Photo Lighting Fix",
-  "description": "An application that uses the Gemini API to intelligently correct the lighting in user-uploaded photos, balancing exposure, brightening subjects, and reducing harsh highlights for a professionally finished look.",
-  "requestFramePermissions": []
-}

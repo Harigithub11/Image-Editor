@@ -1,20 +1,54 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# AI Passport Photo Creator
 
-# Run and deploy your AI Studio app
+An intelligent application that automatically transforms photos into passport-ready images with proper lighting, background, and composition.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1FitwmKTBvyVnk3FyoExbR_kqk3jHELel
+- Automatic passport photo formatting (35mm x 35mm equivalent)
+- Background conversion to solid white
+- Intelligent lighting correction and exposure balancing
+- Face-centered composition with proper headroom
+- Professional portrait enhancement
+- Download as JPEG format
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
-
+**Prerequisites:** Node.js 16+
 
 1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+   ```bash
+   npm install
+   ```
+
+2. Create a `.env.local` file and add your Gemini API key:
+   ```
+   API_KEY=your-gemini-api-key-here
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser to `http://localhost:5173`
+
+## Deploy to Vercel
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Harigithub11/Image-Editor)
+
+### Manual Deployment Steps:
+
+1. Push your code to GitHub
+
+2. Go to [vercel.com](https://vercel.com) and sign in
+
+3. Click "Add New Project"
+
+4. Import your GitHub repository
+
+5. Configure environment variables:
+   - Add `API_KEY` with your Gemini API key
+
+6. Click "Deploy"
+
+Your app will be live in minutes at `https://your-app-name.vercel.app`
